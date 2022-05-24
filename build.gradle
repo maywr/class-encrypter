@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+    id "com.github.johnrengelman.shadow" version "7.1.2"
+    id 'application'
+}
+
+compileJava.options.encoding('UTF8')
+mainClassName = 'xyz.maywr.encrypter.Main'
+group 'xyz.maywr'
+version '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'commons-io:commons-io:2.11.0'
+    implementation 'commons-cli:commons-cli:1.5.0'
+    implementation 'org.json:json:20220320'
+
+}
